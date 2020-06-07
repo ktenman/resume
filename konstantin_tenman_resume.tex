@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Konstantin Tenman
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.35in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[2]{
+  \item\small{
+    \textbf{#1}{#2\vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/ktenman}{\Large Konstantin Tenman}} & \href{tel:+447487553781}{+44 7487 553781} \\ 
+  {Software Engineer} & \href{mailto:konstantin@tenman.ee}{konstantin@tenman.ee}\\
+  {London, United Kingdom} & \href{https://github.com/ktenman}{https://github.com/ktenman}\\
+  {} & \href{https://www.linkedin.com/in/ktenman}{https://www.linkedin.com/in/ktenman}\\
+\end{tabular*}
+
+%--------PROGRAMMING SKILLS------------
+\section{Profile}
+     {Self-motivated Software Developer with six years of experience including over five years
+    of experience in Java development. My goal is to make software that is perfect for users 
+    and make an elegant programming code. I enjoy doing deep investigations, learning new 
+    technologies and always looking for ways to do things better. I would like to
+     participate in true teamwork and develop new, useful and high standard IT systems.}
+
+ %--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+   \item{
+    \textbf{Languages}{: Java 8+, TypeScript}
+     \hfill
+    \textbf{Technologies}{: Spring Boot, Angular 2+, Hibernate, Junit, Mockito}
+   }
+   \item
+    \textbf{Tools}{: Docker, PostgreSQL, AWS, Redis, Git, Jenkins, Maven, macOS, IntelliJ, SNS/SQS}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Monese}{London, United Kingdom}
+      {Software Engineer}{Oct 2017 - Present}
+      \resumeItemListStart
+        \resumeItemWithoutTitle{}
+        {Reduced costs by systematically working to improve software performance and decrease their operationg costs. For one application, it's monthly operating cost was decreased for 50\%. }
+        \resumeItemWithoutTitle{}
+        {Increased revenue by doggedly identifying and fixing production issues. In one case, pursiong a fix for a single customer led to identifying a significant gap in profit.}
+        \resumeItem{Pricing}
+          {Researched regarding breaking monolithic responsibility micro-services. 
+          Refactored and developed the pricing structure of the system. Delivered business priorities by completing new annual pricing fuctionality on-time and without any significant issues.}
+        \resumeItem{Joint Accounts}
+          {Designed and developed the main logic around the Joint Accounts feature.}
+%\resumeItemListEnd
+%\resumeSubSubheading
+%{Software Engineer}{Oct 2017 - March 2019}
+%\resumeItemListStart
+      \resumeItem{Smart Transactions}
+        {Improved scalability of micro-services by separating read and write operation of database. Migrated gradually 120M payments to new queue based Java micro-service.
+        Decreased average response time from 60ms to 5ms.
+        Researched and introduced the new Angular 5 framework for internal tooling. 
+        Helped to improve seamless deployment in Amazon AWS.}
+      \resumeItem{Recurring Payments}
+        {Introduced Spring Boot 2 with Java 10 with Junit 5, Mockito, AssertJ, integration tests.
+        Created a micro-service with test coverage of up to 80\%.}
+      \resumeItem{Tools}
+        {Java 8-11, Angular, TypeScript, Grails, Scala, Docker, Amazon AWS, PostgreSQL, Spring Boot, Google API, Mockito, Junit, Redis, AWS, CloudWatch, New Relic, Jenkins, Git, Intellij, Groovy, Testcontainers, Maven, Liquibase, Bootstrap, macOS}
+  \resumeItemListEnd
+
+    \resumeSubheading
+      {Codeborne}{Tallinn, Estonia}
+      {Full Stack Java Developer}{Apr 2017 - Oct 2017}
+      \resumeItemListStart
+        \resumeItem{Bank Saint-Petersburg}
+          {Developed internet banking website which is used by 2M customers and mobile application.}
+        \resumeItem{\href{https://expobanking.cz/}{Czech Expobank}}
+          {Developed a responsive internet banking website for desktop and mobile platforms.}
+        \resumeItem{Tools}
+        {Java 8, RiotJS, Selenium, Mockito, TDD, Intellij, Agile, extreme programming, Play! Framework, Ubuntu}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Knowit}{Tallinn, Estonia}
+      {Full Stack Java Developer}{Jun 2016 - Apr 2017}
+      \resumeItemListStart
+        \resumeItemWithoutTitle{}
+          {Developed a full-stack web-based application where users create services and search for them through Google Maps.}
+        \resumeItem{Technologies}
+          {AngularJS, Java 8, Docker, Spring Boot, Hibernate, JHipster, Sass, CSS3, HTML5, Protractor, Maven, Liquibase, PostgreSQL, Bootstrap, Ubuntu, Git}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Tallinn University}{Estonia}
+    {Bachelor of Scinece in Engineering (BSc); Computer Science;  GPA: 4.73/5; cum laude}{2014 - 2017}
+\resumeSubHeadingListEnd
+
+
+%-----------HOBBIES-----------------
+%\section{Hobbies}
+ % \resumeSubHeadingListStart
+  %  \resumeItemWithoutTitle{Swimming}{}
+   % \resumeSubItem{Reading}{}
+  %  \resumeSubItem{Devclub.eu / Devclub.ee}
+  %   {It is a meeting held once a month where three presenters talk about topics
+  %  related to Information Technology.}
+%  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+\end{document}

@@ -1,0 +1,8 @@
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.fdv_latexmk
+*.fls
+*.out
+*.log
+*.synctex.gz
+.idea/
