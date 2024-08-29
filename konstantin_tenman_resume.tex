@@ -2,6 +2,7 @@
 % Resume in Latex
 % Author : Konstantin Tenman
 %------------------------
+
 \documentclass[11pt,a4paper,oneside]{report}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -10,29 +11,35 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks,colorlinks=true,allcolors=black,pdfborderstyle={/S/U/W 1}]{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.35in}
 \addtolength{\textheight}{1.0in}
+
 \urlstyle{same}
+
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+
 % Sections formatting
 \titleformat{\section}{
     \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
@@ -40,164 +47,204 @@
         \textbf{#1}{: #2 \vspace{-2pt}}
     }
 }
+
 \newcommand{\resumeItemWithoutTitle}[2]{
     \item\small{
         \textbf{#1}{#2\vspace{-2pt}}
     }
 }
+
+
 \newcommand{\resumeSubheading}[4]{
     \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & #2 \
-        \textit{\small#3} & \textit{\small #4} \
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
+
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-        \textit{\small#1} & \textit{\small #2} \
+        \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
 \renewcommand{\labelitemii}{$\circ$}
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{document}
-%----------HEADING-----------------
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-        \textbf{\href{https://www.linkedin.com/in/ktenman}{\Large Konstantin Tenman}} & \href{tel:+3725111618}{+372 511 1618} \\
-        Senior Software Engineer & \href{mailto:konstantin@tenman.ee}{konstantin@tenman.ee} \\
-        Tallinn, Estonia & \href{https://github.com/ktenman}{https://github.com/ktenman} \\
-        & \href{https://www.linkedin.com/in/ktenman}{https://www.linkedin.com/in/ktenman}
-    \end{tabular*}
 
-%--------PROFILE------------
-\section{Profile}
-{I have eight years of experience as a software developer, with a focus on Java. I commit to teamwork, building applications that undergo rigorous testing and seamless delivery. I love researching and staying updated with the latest technologies. I'm always searching for ways to improve my skills and make my work better.}
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-\resumeSubHeadingListStart
-\item{
-\textbf{Programming Languages}: Java, Kotlin, TypeScript, Python
-\hfill
-\textbf{Technologies}: Spring Boot, Angular, Vue, Hibernate, JUnit, Mockito, WireMock, Kafka}
-\item
-\textbf{Tools}: AWS, PostgreSQL, Docker, Docker Compose, Git, Maven, IntelliJ, Redis
-\hfill
-\textbf{DevOps}: Jenkins, GitHub Actions, GitLab CI/CD, Amazon ECS, Docker Swarm
-\item
-\textbf{Languages}: English, Estonian, Russian
-\resumeSubHeadingListEnd
-%-----------EXPERIENCE-----------------
-\section{Experience}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Bankera}{Tallinn, Estonia}
-{Senior Software Engineer}{Jun 2022 - Present}
-\resumeItemListStart
-\resumeItemWithoutTitle{}
-{As a key member of the Know Your Customer (KYC) team, I have led the development and maintenance of microservices using Spring Boot and Java (versions 8 to 21), utilizing databases like Postgres and testing tools such as Mockito, Wiremock, and AssertJ. My contributions have been instrumental in building robust, scalable, and effective solutions for financial services regulatory compliance.}
-\resumeItemListEnd
-\resumeSubheading
-{University of Tartu}{Tartu, Estonia}
-{Teaching Assistant}{Aug 2022 - Present}
-\resumeItemListStart
-\resumeItemWithoutTitle{}
-{Teaching courses on Object-Oriented Programming in Java, Web Application Development, and Enterprise System Integration, contributing to the academic growth of students.}
-\resumeItemListEnd
-\resumeSubheading
-{Monese}{Tallinn, Estonia}
-{Technical Lead Engineer}{Sep 2021 - Jun 2022}
-\resumeItemListStart
-\resumeItemWithoutTitle{}
-{Led the refactoring of a monolith into single-responsibility microservices within the Payments team. Spearheaded the architectural design of a strong customer authentication (SCA PSD2) solution and facilitated regular brainstorming sessions to foster team innovation and problem-solving.}
-\resumeItemWithoutTitle{}
-{Played a pivotal role in interviewing and onboarding new team members, significantly contributing to team expansion and development.}
-\resumeItemListEnd
-\resumeSubheading
-{Monese}{London, United Kingdom}
-{Technical Lead Engineer}{Jul 2020 - Sep 2021}
-\resumeItemListStart
-\resumeItemWithoutTitle{}
-{Systematically improved software performance and reduced operating costs, achieving a 50% reduction in monthly operating expenses for a critical application.}
-\resumeItemListEnd
-\resumeSubheading
-{Monese}{London, United Kingdom}
-{Software Engineer}{Mar 2019 - Jun 2020}
-\resumeItemListStart
-\resumeItemWithoutTitle{}
-{Identified and resolved production issues, significantly increasing revenue. A particular solution for a single customer uncovered a substantial profit gap.}
-\resumeItemWithoutTitle{}
-{As a member of the Pricing team, I delivered new annual pricing functionality on time and without significant issues, and led research on decomposing a monolithic application into single-responsibility microservices.}
-\resumeItemWithoutTitle{}
-{In the Joint Accounts team, I was responsible for designing and developing the core logic of the Joint Accounts feature.}
-\resumeItemListEnd
-\resumeSubheading
-{Monese}{Tallinn, Estonia}
-{Software Engineer}{Oct 2017 - Mar 2019}
-\resumeItemListStart
-\resumeItemWithoutTitle{}
-{Enhanced micro-service scalability by segregating database read and write operations.}
-\resumeItemWithoutTitle{}
-{Successfully migrated 120M payments to a new queue-based Java micro-service, reducing the average response time from 60ms to 5ms.}
-\resumeItemWithoutTitle{}
-{Introduced Angular 5 for internal tooling and improved seamless deployment on Amazon AWS.}
-\resumeItemWithoutTitle{}
-{Designed and developed a micro-service for Recurring Payments with a test coverage of up to 80%.}
-\resumeItemListEnd
-\resumeSubheading
-{Codeborne}{Tallinn, Estonia}
-{Software Developer}{Apr 2017 - Oct 2017}
-\resumeItemListStart
-\resumeItemWithoutTitle{}
-{Developed responsive internet banking websites for major banking clients, including Bank "Saint-Petersburg" and the Czech online bank Expobank.cz.}
-\resumeItemWithoutTitle{}
-{Enhanced team productivity and software quality by promoting best practices through code reviews, pair programming, and test-driven development.}
-\resumeItemListEnd
-\resumeSubheading
-{Knowit}{Tallinn, Estonia}
-{Software Developer}{Jun 2016 - Apr 2017}
-\resumeItemListStart
-\resumeItemWithoutTitle{}
-{Recognized as Employee of Q4, 2016 for outstanding contributions.}
-\resumeItemWithoutTitle{}
-{Developed a full-stack, web-based application enabling users to create and search for services via Google Maps.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-%-----------EDUCATION-----------------
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Tartu University}{Estonia}
-{Master of Engineering (MEng) in Computer Science; GPA: 4.67/5;}{}
-\resumeItemListStart
-\resumeItemWithoutTitle{}
-{\href{https://github.com/ktenman/mmse-app}{Master's Thesis}: AI-powered web-based MMSE app for cognitive assessment, leveraging BERT, GPT-3, ResNet-50, Spring Boot, Vue.js, Redis, PostgreSQL, and Docker.}
-\resumeItemWithoutTitle{}
-{Recipient of Achievement and Specialisation stipends.}
-\resumeItemListEnd
-\resumeSubheading
-{Tallinn University}{Estonia}
-{Bachelor of Science in Engineering (BSc) in Computer Science; GPA: 4.73/5; cum laude}{}
-\resumeItemListStart
-\resumeItemWithoutTitle{}
-{Bachelor's Thesis: ``The Development of a Self-study Web Application Using Angular and Spring Boot.''}
-\resumeItemWithoutTitle{}
-{Recipient of Achievement and Specialisation stipends.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-%-----------PET PROJECTS-----------------
-\section{Pet Projects}
-\resumeSubHeadingListStart
-\resumeItemWithoutTitle{\href{https://github.com/ktenman/captcha-solver}{CAPTCHA Solver}: }
-{Deep convolutional neural network for recognizing and decoding text from CAPTCHA images, built with Python, TensorFlow, Keras, Matplotlib, and NumPy.}
-\resumeItemWithoutTitle{\href{https://github.com/ktenman/sectors}{Form Handler Application}: }
-{Dynamic form submission app with sector selection, session management, and data persistence, utilizing Spring Boot, Vue.js, Bootstrap, PostgreSQL, Redis, and Docker.}
-\resumeItemWithoutTitle{\href{https://github.com/ktenman/file-api}{File API}: }
-{RESTful file management service built with Kotlin, Spring Boot, MinIO, MongoDB, and Redis, featuring API documentation with Swagger and comprehensive testing with JUnit 5 and Mockito.}
-\resumeSubHeadingListEnd
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/ktenman}{\Large Konstantin Tenman}} & \href{tel:+3725111618}{+372 511 1618} \\
+  Senior Software Engineer & \href{mailto:konstantin@tenman.ee}{konstantin@tenman.ee} \\
+  Tallinn, Estonia & \href{https://github.com/ktenman}{https://github.com/ktenman} \\
+   & \href{https://www.linkedin.com/in/ktenman}{https://www.linkedin.com/in/ktenman} \\
+  \end{tabular*}
+
+  %--------PROFILE------------
+  \section{Profile}
+  {I have eight years of experience as a software developer, with a focus on Java. I commit to teamwork, building applications that undergo rigorous testing and seamless delivery. I love researching and staying updated with the latest technologies. I'm always searching for ways to improve my skills and make my work better.}
+
+  %--------PROGRAMMING SKILLS------------
+  \section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Programming Languages}: Java, TypeScript, Python, Kotlin
+      \hfill
+      \textbf{Technologies}: Spring Boot, Angular, VueJS, Hibernate, JUnit, Mockito, WireMock, Kafka}
+    \item
+      \textbf{Tools}: AWS, PostgreSQL, Docker, Git, Maven, IntelliJ, Redis
+      \hfill
+      \textbf{DevOps}: GitLab CI/CD, GitHub Actions, Amazon ECS, Docker Swarm, Jenkins
+    \item
+      \textbf{Languages}: English, Estonian, Russian
+  \resumeSubHeadingListEnd
+
+
+  %-----------EXPERIENCE-----------------
+  \section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+  {Cybernetica}{Tartu, Estonia}
+  {Software Architect}{Jun 2022 - Present}
+      \resumeItemListStart
+          \resumeItemWithoutTitle{}
+          {Leading the development of a new product, focusing on the design and implementation of a microservices architecture using Spring Boot and Kotlin.}
+          \resumeItemWithoutTitle{}
+          {Collaborating with the product owner to define the product roadmap and ensure alignment with the company's strategic goals.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+  {University of Tartu}{Tartu, Estonia}
+  {Teaching Assistant}{Aug 2022 - Present}
+      \resumeItemListStart
+          \resumeItemWithoutTitle{}
+          {Teaching courses on Object-Oriented Programming in Java, Web Application Development, and Enterprise System Integration, contributing to the academic growth of students.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+  {Bankera}{Tallinn, Estonia}
+  {Senior Software Engineer}{Jun 2022 - Jul 2024}
+      \resumeItemListStart
+          \resumeItemWithoutTitle{}
+          {As a key member of the Know Your Customer (KYC) team, I have led the development and maintenance of microservices using Spring Boot and Java (versions 8 to 21), utilizing databases like Postgres and testing tools such as Mockito, Wiremock, and AssertJ. My contributions have been instrumental in building robust, scalable, and effective solutions for financial services regulatory compliance.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+  {Monese}{Tallinn, Estonia}
+  {Technical Lead Engineer}{Sep 2021 - Jun 2022}
+    \resumeItemListStart
+      \resumeItemWithoutTitle{}
+      {Led the refactoring of a monolith into single-responsibility microservices within the Payments team. Spearheaded the architectural design of a strong customer authentication (SCA PSD2) solution and facilitated regular brainstorming sessions to foster team innovation and problem-solving.}
+      \resumeItemWithoutTitle{}
+      {Played a pivotal role in interviewing and onboarding new team members, significantly contributing to team expansion and development.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+  {Monese}{London, United Kingdom}
+  {Technical Lead Engineer}{Jul 2020 - Sep 2021}
+      \resumeItemListStart
+          \resumeItemWithoutTitle{}
+          {Systematically improved software performance and reduced operating costs, achieving a 50\% reduction in monthly operating expenses for a critical application.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+  {Monese}{London, United Kingdom}
+  {Software Engineer}{Mar 2019 - Jun 2020}
+      \resumeItemListStart
+          \resumeItemWithoutTitle{}
+          {Identified and resolved production issues, significantly increasing revenue. A particular solution for a single customer uncovered a substantial profit gap.}
+          \resumeItemWithoutTitle{}
+          {As a member of the Pricing team, I delivered new annual pricing functionality on time and without significant issues, and led research on decomposing a monolithic application into single-responsibility microservices.}
+          \resumeItemWithoutTitle{}
+          {In the Joint Accounts team, I was responsible for designing and developing the core logic of the Joint Accounts feature.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+  {Monese}{Tallinn, Estonia}
+  {Software Engineer}{Oct 2017 - Mar 2019}
+    \resumeItemListStart
+      \resumeItemWithoutTitle{}
+      {Enhanced micro-service scalability by segregating database read and write operations.}
+      \resumeItemWithoutTitle{}
+      {Successfully migrated 120M payments to a new queue-based Java micro-service, reducing the average response time from 60ms to 5ms.}
+      \resumeItemWithoutTitle{}
+      {Introduced Angular 5 for internal tooling and improved seamless deployment on Amazon AWS.}
+      \resumeItemWithoutTitle{}
+      {Designed and developed a micro-service for Recurring Payments with a test coverage of up to 80\%.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+  {Codeborne}{Tallinn, Estonia}
+  {Software Developer}{Apr 2017 - Oct 2017}
+    \resumeItemListStart
+      \resumeItemWithoutTitle{}
+      {Developed responsive internet banking websites for major banking clients, including Bank "Saint-Petersburg" and the Czech online bank Expobank.cz.}
+      \resumeItemWithoutTitle{}
+      {Enhanced team productivity and software quality by promoting best practices through code reviews, pair programming, and test-driven development.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+  {Knowit}{Tallinn, Estonia}
+  {Software Developer}{Jun 2016 - Apr 2017}
+    \resumeItemListStart
+      \resumeItemWithoutTitle{}
+      {Recognized as Employee of Q4, 2016 for outstanding contributions.}
+      \resumeItemWithoutTitle{}
+      {Developed a full-stack, web-based application enabling users to create and search for services via Google Maps.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+  %-----------EDUCATION-----------------
+  \section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Tartu University}{Estonia}
+  {Master of Science (MSc) in Computer Science; GPA: 4.79/5; cum laude}{}
+  \resumeItemListStart
+    \resumeItemWithoutTitle{}
+    {Master's Thesis: ``AI-Powered MMSE: Enhancing Cognitive Assessment''}
+    \resumeItemWithoutTitle{}
+    {Recipient of Achievement and Specialisation stipends.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Tallinn University}{Estonia}
+  {Bachelor of Science (BSc) in Computer Science; GPA: 4.73/5; cum laude}{}
+  \resumeItemListStart
+      \resumeItemWithoutTitle{}
+      {Bachelor's Thesis: ``The Development of a Self-study Web Application Using Angular and Spring Boot''}
+      \resumeItemWithoutTitle{}
+      {Recipient of Achievement and Specialisation stipends.}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------HOBBIES-----------------
+%\section{Hobbies}
+% \resumeSubHeadingListStart
+%  \resumeItemWithoutTitle{Swimming}{}
+% \resumeSubItem{Reading}{}
+%  \resumeSubItem{Devclub.eu / Devclub.ee}
+%   {It is a meeting held once a month where three presenters talk about topics
+%  related to Information Technology.}
+%  \resumeSubHeadingListEnd
+
 %-------------------------------------------
+
 \end{document}
