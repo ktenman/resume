@@ -18,7 +18,7 @@ jobs:
           root_file: konstantin_tenman_resume.tex
 
       - name: Upload PDF file
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Resume
           path: konstantin_tenman_resume.pdf
